@@ -6,39 +6,55 @@
   <body>
     <h1>Coding Form!</h1>
     <div>
-      <label for="email">Email:<br /></label>
-      <input
-        type="email"
-        id="email"
-        pattern=".+@globex\.com"
-        size="30"
-        required />
+      <label for="email">Email:</label>
+      <div>
+        <input
+          type="email"
+          id="email"
+          pattern=".+@globex\.com"
+          size="30"
+          required />
+      </div>
     </div>
     <div>
-      <label for="responses">Why is coding cool?<br /></label>
-      <select name="responses">
-        <option value="default">Select an option</option>
-        <option value="interesting">Because it's interesting</option>
-        <option value="fun">Because it's fun</option>
-        <option value="powerful">Because it's powerful</option>
-      </select>
+      <label for="responses">Why is coding cool?</label>
+      <div>
+        <select name="responses">
+          <option value="default">Select an option</option>
+          <option value="interesting">Because it's interesting</option>
+          <option value="fun">Because it's fun</option>
+          <option value="powerful">Because it's powerful</option>
+        </select>
+      </div>
     </div>
     <div>
-      <label for="languages">Favorite language? (choose one)<br /></label>
-      <input type="radio" name="languages" value="html" checked="checked" />
-      HTML <input type="radio" name="languages" value="css" /> HTML
-      <input type="radio" name="languages" value="javascript" /> Javascript
+      <label for="languages">Favorite language? (choose one)</label>
+      <div>
+        <input type="radio" name="languages" value="html" checked="checked" />
+        <label for="html">HTML</label>
+        <input type="radio" name="languages" value="css" />
+        <label for="css">CSS</label>
+        <input type="radio" name="languages" value="javascript" />
+        <label for="javascript">Javascript</label>
+      </div>
     </div>
     <div>
       <label for="signUp"
-        >Would you like to sign up for more information?<br
-      /></label>
-      <input type="checkbox" name="signUp" value="signUp" checked="checked" />
-      Sign me up!
+        >Would you like to sign up for more information?</label
+      >
+      <div>
+        <input
+          type="checkbox"
+          name="signUp"
+          value="signUp"
+          checked="checked" />Sign me up!
+      </div>
     </div>
     <div>
-      <label for="comments">Comments:<br /></label>
-      <textarea name="comments" cols="30" rows="10"></textarea>
+      <label for="comments">Comments:</label>
+      <div>
+        <textarea name="comments" cols="30" rows="10"></textarea>
+      </div>
     </div>
     <div>
       <input type="submit" name="submit" value="Submit" />

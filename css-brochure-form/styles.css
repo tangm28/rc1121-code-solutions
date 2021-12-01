@@ -1,0 +1,52 @@
+h2 {
+  text-align: center;
+  color: orangered;
+  font-family: 'AtlasGrotesk', sans-serif;
+}
+
+div {
+  font-family: 'Brandon Grotesque', sans-serif;
+}
+
+label {
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+button {
+  background-color: orangered;
+  color: white;
+  border-color: orangered;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 100%;
+}
+
+.company-email,
+.user-name,
+.hiring-location,
+.number-engineers {
+  padding-top: 15px;
+  padding-left: 10%;
+}
+
+.company-email input,
+.user-name input,
+.hiring-location input,
+.number-engineers select {
+  width: 550px;
+  padding: 10px 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border-color: grey;
+  font-size: 100%;
+}
+
+.number-engineers select {
+  background-color: gainsboro;
+}
+
+.submit {
+  padding-top: 15px;
+  padding-left: 600px;
+}

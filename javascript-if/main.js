@@ -55,7 +55,7 @@ function isOldEnoughToDrink(person) {
 // console.log('value of isOldEnoughToDrink(bart): ', isOldEnoughToDrink(bart));
 
 function isOldEnoughToDrive(person) {
-  return person.age >= 18;
+  return person.age >= 16;
 }
 
 // var homer = {

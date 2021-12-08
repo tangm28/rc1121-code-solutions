@@ -20,28 +20,28 @@ function isUnderFive(number) {
   return number < 5;
 }
 
-// console.log('value of isUnderFive: ', isUnderFive(4));
-// console.log('value of isUnderFive: ', isUnderFive(10));
-// console.log('value of isUnderFive: ', isUnderFive(5));
+// console.log('value of isUnderFive(4): ', isUnderFive(4));
+// console.log('value of isUnderFive(10): ', isUnderFive(10));
+// console.log('value of isUnderFive(5): ', isUnderFive(5));
 
 function isEven(number) {
   return number % 2 === 0;
 }
 
-// console.log('value of isEven: ', isEven(4));
-// console.log('value of isEven: ', isEven(10));
-// console.log('value of isEven: ', isEven(5));
+// console.log('value of isEven(4): ', isEven(4));
+// console.log('value of isEven(10): ', isEven(10));
+// console.log('value of isEven(5): ', isEven(5));
 
 function startsWithJ(string) {
   return string[0] === 'J';
 }
 
-// console.log('value of startsWithJ: ', startsWithJ('JavaScript'));
-// console.log('value of startsWithJ: ', startsWithJ('PHP'));
-// console.log('value of startsWithJ: ', startsWithJ('HTML'));
-// console.log('value of startsWithJ: ', startsWithJ('Java'));
-// console.log('value of startsWithJ: ', startsWithJ('Kotlin'));
-// console.log('value of startsWithJ: ', startsWithJ('C#'));
+// console.log('value of startsWithJ('JavaScript'): ', startsWithJ('JavaScript'));
+// console.log('value of startsWithJ('PHP'): ', startsWithJ('PHP'));
+// console.log('value of startsWithJ('HTML'): ', startsWithJ('HTML'));
+// console.log('value of startsWithJ('Java'): ', startsWithJ('Java'));
+// console.log('value of startsWithJ('Kotlin'): ', startsWithJ('Kotlin'));
+// console.log('value of startsWithJ('C#'): ', startsWithJ('C#'));
 
 function isOldEnoughToDrink(person) {
   return person.age >= 21;
@@ -52,10 +52,10 @@ function isOldEnoughToDrink(person) {
 //   age: 10
 // };
 
-// console.log('value of isOldEnoughToDrink: ', isOldEnoughToDrink(bart));
+// console.log('value of isOldEnoughToDrink(bart): ', isOldEnoughToDrink(bart));
 
 function isOldEnoughToDrive(person) {
-  return person.age >= 21;
+  return person.age >= 18;
 }
 
 // var homer = {
@@ -63,7 +63,7 @@ function isOldEnoughToDrive(person) {
 //   age: 39
 // };
 
-// console.log('value of isOldEnoughToDrive: ', isOldEnoughToDrive(homer));
+// console.log('value of isOldEnoughToDrive(homer): ', isOldEnoughToDrive(homer));
 
 function isOldEnoughToDrinkAndDrive(person) {
   return false;
@@ -81,11 +81,11 @@ function categorizeAcidity(pH) {
   }
 }
 
-// console.log('value of categorizeAcidity: ', categorizeAcidity(-1));
-// console.log('value of categorizeAcidity: ', categorizeAcidity(14.0000001));
-// console.log('value of categorizeAcidity: ', categorizeAcidity(7));
-// console.log('value of categorizeAcidity: ', categorizeAcidity(2));
-// console.log('value of categorizeAcidity: ', categorizeAcidity(9));
+// console.log('value of categorizeAcidity(-1): ', categorizeAcidity(-1));
+// console.log('value of categorizeAcidity(14.0000001): ', categorizeAcidity(14.0000001));
+// console.log('value of categorizeAcidity(7): ', categorizeAcidity(7));
+// console.log('value of categorizeAcidity(2): ', categorizeAcidity(2));
+// console.log('value of categorizeAcidity(9): ', categorizeAcidity(9));
 
 function introduceWarnerBro(name) {
   if (name === 'yakko') {
@@ -101,8 +101,8 @@ function introduceWarnerBro(name) {
   }
 }
 
-// console.log('value of introduceWarnerBro: ', introduceWarnerBro('yakko'));
-// console.log('value of introduceWarnerBro: ', introduceWarnerBro('wakko'));
-// console.log('value of introduceWarnerBro: ', introduceWarnerBro('dot'));
-// console.log('value of introduceWarnerBro: ', introduceWarnerBro('cody'));
-// console.log('value of introduceWarnerBro: ', introduceWarnerBro('minerva'));
+// console.log('value of introduceWarnerBro('yakko'): ', introduceWarnerBro('yakko'));
+// console.log('value of introduceWarnerBro('wakko'): ', introduceWarnerBro('wakko'));
+// console.log('value of introduceWarnerBro('dot'): ', introduceWarnerBro('dot'));
+// console.log('value of introduceWarnerBro('cody'): ', introduceWarnerBro('cody'));
+// console.log('value of introduceWarnerBro('minerva'): ', introduceWarnerBro('minerva'));

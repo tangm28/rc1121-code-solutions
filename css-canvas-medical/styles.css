@@ -1,0 +1,176 @@
+body {
+  background-color: black;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  background-color: white;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+header {
+  padding-left: 6%;
+  padding-right: 6%;
+  border-bottom: 2px solid #eaebeb;
+}
+
+.header-links > a {
+  text-decoration: none;
+  font-family: Avenir, sans-serif;
+  font-weight: 600;
+  color: #a3a3a3;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+header > .logo > a {
+  text-decoration: none;
+  font-family: "Tiempos Headline", sans-serif;
+  color: #134969;
+  font-size: 45px;
+  margin-bottom: 5%;
+}
+
+.contact-button > button {
+  background-color: #134969;
+  color: white;
+  font-family: Avenir, sans-serif;
+  font-weight: 500;
+  border-radius: 3px;
+  padding: 10%;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 475px;
+  color: white;
+  margin: 5% 6%;
+  padding-top: 6.5%;
+  padding-bottom: 6.5%;
+  padding-left: 6%;
+}
+
+.hero-content > h1 {
+  font-family: "Tiempos Headline", sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+
+.hero-content > p {
+  font-family: Avenir, sans-serif;
+  font-size: 0.85rem;
+  line-height: 22px;
+  margin-top: 5%;
+  margin-bottom: 6%;
+}
+
+.hero-content > button,
+.learn-more button {
+  background-color: #134969;
+  color: white;
+  font-family: Avenir, sans-serif;
+  font-size: large;
+  border-radius: 7px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.light-grey-section {
+  background-color: #fafafa;
+  color: #6e6e6e;
+  padding: 6%;
+}
+
+.pref > h2,
+.pref-description > p {
+  text-align: center;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-test {
+  width: 100%;
+  padding-right: 200px;
+}
+
+.location > h3 {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.align-center {
+  align-content: center;
+}
+
+.col-1 {
+  max-width: 7.33%;
+}
+
+.col-2 {
+  max-width: 15.66%;
+}
+
+.col-3 {
+  max-width: 24%;
+}
+
+.col-4 {
+  max-width: 32.33%;
+}
+
+.col-5 {
+  max-width: 40.66%;
+}
+
+.col-6 {
+  max-width: 49%;
+}
+
+.col-7 {
+  max-width: 57.33%;
+}
+
+.col-8 {
+  max-width: 65.66%;
+}
+
+.col-9 {
+  max-width: 74%;
+}
+
+.col-10 {
+  max-width: 82.33%;
+}
+
+.col-11 {
+  max-width: 90.66%;
+}
+
+.col-12 {
+  max-width: 99%;
+}

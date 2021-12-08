@@ -7,7 +7,7 @@ console.log('The value of maximumValue: ', maximumValue);
 
 var heroes = ['Iron Man', 'Captain America', 'Thor', 'Hulk'];
 var randomNumber = Math.random();
-randomNumber += randomNumber * heroes.length;
+randomNumber *= heroes.length;
 
 console.log('The value of randomNumber: ', randomNumber);
 

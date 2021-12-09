@@ -6,3 +6,4 @@ function sumAll(numbers) {
   }
   return sum;
 }
+/** */

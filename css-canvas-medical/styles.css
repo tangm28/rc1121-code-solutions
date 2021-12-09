@@ -36,7 +36,7 @@ header {
   margin-bottom: auto;
 }
 
-header > .logo > a {
+.head > .logo > a {
   text-decoration: none;
   font-family: "Tiempos Headline", sans-serif;
   color: #134969;
@@ -141,8 +141,17 @@ header > .logo > a {
 
 footer {
   background-color: #525351;
+  font-family: Avenir, sans-serif;
   color: white;
   padding: 6%;
+}
+
+footer > nav {
+  gap: 35%;
+}
+
+.logo-address > .logo {
+  margin-bottom: 15%;
 }
 
 .logo-address > .logo > a {
@@ -150,7 +159,26 @@ footer {
   font-family: "Tiempos Headline", sans-serif;
   color: white;
   font-size: 45px;
-  margin-bottom: 5%;
+}
+
+.address > p {
+  font-size: small;
+  margin: 0;
+  padding-top: 3%;
+}
+
+.company,
+.product {
+  gap: 10px;
+}
+
+.company > h4,
+.product > h4 {
+  margin-bottom: 10%;
+}
+
+.term-contact {
+  padding: 4% 6%;
 }
 
 .justify-between {
@@ -167,6 +195,18 @@ footer {
 
 .align-center {
   align-content: center;
+}
+
+.nav-item {
+  text-decoration: none;
+}
+
+.white {
+  color: white;
+}
+
+.gray {
+  color: #6e6e6e;
 }
 
 .col-1 {

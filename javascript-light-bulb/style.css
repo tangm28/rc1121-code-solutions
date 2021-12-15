@@ -1,0 +1,34 @@
+
+.light-bulb {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+
+.container {
+  height: 1000px;
+  background-color: black;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.on {
+  background-color: #faea84;
+  box-shadow: 0 0 100px 50px #fdf4cc;
+}
+
+.off {
+  background-color: #252525;
+  box-shadow: 0 -15px 0 15px #0c0c0c;
+}
+
+.light {
+  background-color: #fef9f1;
+}
+
+.dark {
+  background-color: #111;
+}

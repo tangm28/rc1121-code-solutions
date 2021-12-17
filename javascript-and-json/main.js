@@ -21,11 +21,7 @@ console.log('value of typeof book: ', typeof book);
 var jsonBook = JSON.stringify(book);
 console.log('value of jsonBook: ', jsonBook);
 console.log('value of typeof jsonBook: ', typeof jsonBook);
-var student = {
-  id: 12345,
-  name: 'Michael'
-};
-var jsonStudent = JSON.stringify(student);
+var jsonStudent = '{"id": 12345,"name": "Michael"}';
 console.log('value of jsonStudent: ', jsonStudent);
 console.log('value of typeof jsonStudent: ', typeof jsonStudent);
 var example = JSON.parse(jsonStudent);

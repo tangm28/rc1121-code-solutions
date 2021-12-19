@@ -1,0 +1,38 @@
+.container {
+  width: 1100px;
+  height: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+span {
+  font-size: xxx-large;
+  font-weight: bold;
+  white-space: pre-wrap;
+  padding: 3px;
+}
+
+.underline {
+  border-bottom: solid black;
+}
+
+.wrong {
+  border-bottom: solid red;
+  color: red;
+}
+
+.correct {
+  color: lawngreen;
+}

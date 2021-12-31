@@ -6,7 +6,7 @@ function getPokemonData(name) {
     console.log(xhr.status);
     console.log(xhr.response);
   });
-  // xhr.send();
+  xhr.send();
 }
 
 getPokemonData('cubone');

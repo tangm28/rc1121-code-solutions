@@ -1,0 +1,56 @@
+img {
+  width: 100%;
+}
+
+p {
+  line-height: 1.5;
+}
+
+button {
+  border-color: orangered;
+  background-color: white;
+  color: orangered;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+
+.container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: karla, sans-serif;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column-full {
+  text-align: center;
+}
+
+.column-full > h1 {
+  font-size: 300%;
+}
+
+.tiles {
+  display: flex;
+  flex-basis: 50%;
+  padding: 25px;
+}
+
+.tile-picture {
+  flex-basis: 25%;
+}
+
+.tile-description {
+  flex-basis: 75%;
+  font-size: small;
+}
+
+.learn-more {
+  display: flex;
+  justify-content: center;
+}

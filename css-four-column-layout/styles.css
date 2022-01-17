@@ -1,0 +1,58 @@
+header h1 {
+  text-align: center;
+  font-size: larger;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Barlow', sans-serif;
+}
+
+.row {
+  display: flex;
+  gap: 2%;
+}
+
+.tile {
+  flex-basis: 20%;
+}
+
+.tile-content img {
+  width: 100%;
+}
+
+.tile-content h3 {
+  text-align: center;
+  font-size: medium;
+}
+
+.tile-content p {
+  text-align: center;
+  font-size: small;
+}
+
+.icon {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon img {
+  width: 25%;
+}
+
+.small-tile {
+  flex-basis: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-around {
+  justify-content: space-around;
+}

@@ -1,52 +1,45 @@
 h2 {
   text-align: center;
-  color: orangered;
   font-family: 'AtlasGrotesk', sans-serif;
-}
-
-div {
-  font-family: 'Brandon Grotesque', sans-serif;
+  color: orangered;
 }
 
 label {
-  font-weight: 500;
   padding-left: 10px;
 }
 
+input,
+select {
+  font-size: 100%;
+  width: 100%;
+  padding: 10px 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border-color: grey;
+}
+
 button {
+  font-size: 100%;
+  padding: 10px 20px;
+  margin-left: 80%;
+  border-radius: 25px;
   background-color: orangered;
   color: white;
   border-color: orangered;
-  border-radius: 25px;
-  padding: 10px 20px;
-  font-size: 100%;
 }
 
 .company-email,
 .user-name,
 .hiring-location,
-.number-engineers {
+.number-engineers,
+.submit {
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-weight: 500;
   padding-top: 15px;
-  padding-left: 10%;
-}
-
-.company-email input,
-.user-name input,
-.hiring-location input,
-.number-engineers select {
-  width: 550px;
-  padding: 10px 5px;
-  margin-top: 5px;
-  border-radius: 5px;
-  border-color: grey;
-  font-size: 100%;
+  padding-left: 35%;
+  padding-right: 35%;
 }
 
 .number-engineers select {
   background-color: gainsboro;
-}
-
-.submit {
-  padding-top: 15px;
-  padding-left: 600px;
 }

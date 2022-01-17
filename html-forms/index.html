@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Form</title>
+  </head>
+  <body>
+    <h1>Coding Form!</h1>
+    <div>
+      <label for="email">Email:</label>
+      <div>
+        <input
+          type="email"
+          id="email"
+          pattern=".+@globex\.com"
+          size="30"
+          required />
+      </div>
+    </div>
+    <div>
+      <label for="responses">Why is coding cool?</label>
+      <div>
+        <select name="responses">
+          <option value="default">Select an option</option>
+          <option value="interesting">Because it's interesting</option>
+          <option value="fun">Because it's fun</option>
+          <option value="powerful">Because it's powerful</option>
+        </select>
+      </div>
+    </div>
+    <div>
+      <label for="languages">Favorite language? (choose one)</label>
+      <div>
+        <input type="radio" name="languages" value="html" checked="checked" />
+        <label for="html">HTML</label>
+        <input type="radio" name="languages" value="css" />
+        <label for="css">CSS</label>
+        <input type="radio" name="languages" value="javascript" />
+        <label for="javascript">Javascript</label>
+      </div>
+    </div>
+    <div>
+      <label for="signUp"
+        >Would you like to sign up for more information?</label
+      >
+      <div>
+        <input
+          type="checkbox"
+          name="signUp"
+          value="signUp"
+          checked="checked" />Sign me up!
+      </div>
+    </div>
+    <div>
+      <label for="comments">Comments:</label>
+      <div>
+        <textarea name="comments" cols="30" rows="10"></textarea>
+      </div>
+    </div>
+    <div>
+      <input type="submit" name="submit" value="Submit" />
+    </div>
+  </body>
+</html>

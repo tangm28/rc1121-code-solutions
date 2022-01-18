@@ -1,0 +1,477 @@
+    1  git config --global user.name "Michael Tang"
+    2  git config --global user.email "tngmichael28@gmail.com"
+    3  git config --global --list
+    4  cd repos
+    5  git clone https://github.com/tangm28/driving-game.git
+    6  cd driving-game/
+    7  npm ci #
+    8  npm install
+    9  git status
+   10  git add index.html 
+   11  git add style.css 
+   12  git status
+   13  git commit -m 'Completed intial set up. HTML Skeleton Complete and set up car image.'
+   14  git status
+   15  git add style.css 
+   16  git status
+   17  git commit -m 'Clean up excess code.'
+   18  git status
+   19  git branch issue-1-user-can-see-car
+   20  git status
+   21  git add index.html 
+   22  git add style.css 
+   23  git switch issue-1-user-can-see-car 
+   24  git status
+   25  get status
+   26  git status
+   27  git add index.html 
+   28  git add style.css 
+   29  git commit -m 'Completed html skeleton and set up car on page.'
+   30  git push origin issue-1-user-can-see-car 
+   31  cd ..
+   32  list
+   33  --list
+   34  -list
+   35  git --list
+   36  rm -r driving-game/
+   37  cd repos
+   38  git clone git@github.com:tangm28/driving-game.git
+   39  cd driving-game/
+   40  git branch issue-1-user-see-car
+   41  git switch issue-1-user-see-car 
+   42  git status
+   43  git add index.html 
+   44  git add style.css 
+   45  git commit -m 'Created skeleton.'
+   46  git status
+   47  git add index.html 
+   48  git add style.css 
+   49  git commit -m 'Added backgroud.
+   50  '
+   51  git add index.html 
+   52  git add style.css 
+   53  git commit -m 'Added car top webpage.'
+   54  git push origin issue-1-user-see-car 
+   55  git switch master
+   56  git pull
+   57  git branch issue-2-user-turn-car
+   58  git add index.html 
+   59  git add main.js 
+   60  git add style.css 
+   61  git commit -m 'Created data model for direction of car.'
+   62  git status
+   63  git add main.js 
+   64  git add style.css 
+   65  git commit -m 'User turn car in direction of arrow key or wasd.'
+   66  git add main.js 
+   67  git status
+   68  git commit -m 'Update data model to reflect current direction of car.'
+   69  git switch issue-2-user-turn-car 
+   70  git add main.js 
+   71  git status
+   72  git commit -m 'Update data model to reflect current direction of car and user can turn car with arrow keys or wasd.'
+   73  git push origin issue-2-user-turn-car 
+   74  git status
+   75  ./dotnet-install.sh -c Current
+   76  ../
+   77  /..
+   78  cd .../
+   79  cd ..
+   80  ./dotnet-install.sh -c Current
+   81  cd repos
+   82  cd driving-game/
+   83  git status
+   84  git switch master
+   85  git pull
+   86  git branch issue-3-user-start-car
+   87  git switch issue-3-user-start-car 
+   88  git add index.html 
+   89  git add main.js 
+   90  git add style.css 
+   91  git commit -m 'Add coordinates to data model.'
+   92  git add main.js 
+   93  git status
+   94  git commit -m 'Add keydown listener for space button to start car.'
+   95  git add main.js 
+   96  git commit -m 'Add function to update data coordinate and top and left position so car moves every 16 milliseconds.'
+   97  git status
+   98  git add index.html 
+   99  git status
+  100  git commit -m 'Removed unnecessary code.'
+  101  git status
+  102  git push origin issue-3-user-start-car 
+  103  cd repos
+  104  cd driving-game/
+  105  git status
+  106  git push origin issue-3-user-start-car 
+  107  git status
+  108  git switch master
+  109  git pull
+  110  cd ../
+  111  cd rc1121-code-solutions/
+  112  cd http-messages/
+  113  http http://www.example.com
+  114  http --verbose http://example.com
+  115  http --body GET https://jsonplaceholder.typicode.com/users > http-messages/users.json
+  116  cd ../
+  117  http --body GET https://jsonplaceholder.typicode.com/users > http-messages/users.json
+  118  http --body GET https://example.com > http-messages/index.html
+  119  git branch http-messages
+  120  git switch http-messages 
+  121  git status
+  122  git add http-messages/
+  123  git status
+  124  git commit -m 'Completed http messages exercise.'
+  125  git push origin http-messages
+  126  git switch master
+  127  git status
+  128  git switch http-messages 
+  129  git switch master
+  130  cd ../
+  131  cd driving-game/
+  132  git branch issue-4-user-stop-car
+  133  git status
+  134  git add main.js 
+  135  git add style.css 
+  136  git status
+  137  git add index.html 
+  138  git add main.js 
+  139  git add style.css 
+  140  git commit -m 'User can stop car.'
+  141  git switch issue-4-user-stop-car 
+  142  git status
+  143  git add index.html 
+  144  git add main.js 
+  145  git add style.css 
+  146  git status
+  147  git commit -m 'User can stop car by pressing space.'
+  148  git push origin issue-4-user-stop-car
+  149  cd ../
+  150  cd rc1121-code-solutions/
+  151  git branch javascript-ajax
+  152  git switch javascript-ajax 
+  153  git status
+  154  git add javascript-ajax/
+  155  git commit -m 'Completed javascript ajax exercise.'
+  156  git status
+  157  git add javascript-ajax/
+  158  git commit -m 'removed comment.'
+  159  git status
+  160  git push origin javascript-ajax 
+  161  git switch master
+  162  cd ../
+  163  cd driving-game/
+  164  git status
+  165  git switch master
+  166  git pull
+  167  git branch issue-5-user-steer-car
+  168  git switch issue-5-user-steer-car 
+  169  git status
+  170  git add main.js 
+  171  git status
+  172  git commit -m 'User can steer south.'
+  173  git status
+  174  git add main.js 
+  175  git commit -m 'User can steer west.'
+  176  git status
+  177  git add main.js 
+  178  git commit -m 'User can steer north.'
+  179  git status
+  180  git add main.js 
+  181  git add style.css 
+  182  git commit -m 'Fixed overflow issue and removed unneeded code.'
+  183  git push origin issue-5-user-steer-car 
+  184  git switch master
+  185  git pull
+  186  http http://www.example.com
+  187  http GET https://wger.de/api/v2/workout/      -H 'Authorization: Token 40347bbdeb3bcfe80b3dd278e6b864128a087c70'
+  188  http GET https://wger.de/api/v2/workout/
+  189  http GET https://wger.de/api/v2/workout/ \-H 'Authorization: Token 40347bbdeb3bcfe80b3dd278e6b864128a087c70'
+  190  http --body GET https://wger.de/api/v2/workout/
+  191  curl -X GET https://wger.de/api/v2/workout/ \      -H 'Authorization: Token 40347bbdeb3bcfe80b3dd278e6b864128a087c70'
+  192  http curl -X GET https://wger.de/api/v2/workout/ \      -H 'Authorization: Token 40347bbdeb3bcfe80b3dd278e6b864128a087c70'
+  193  http GET https://wger.de/api/v2/workout/ \      -H 'Authorization: Token 40347bbdeb3bcfe80b3dd278e6b864128a087c70'
+  194  http GET https://wger.de/api/v2/workout/ \-H 'Authorization: Token 40347bbdeb3bcfe80b3dd278e6b864128a087c70'
+  195  http GET https://wger.de/api/v2/workout/ \Header 'Authorization: Token 40347bbdeb3bcfe80b3dd278e6b864128a087c70'
+  196  http GET https://wger.de/api/v2/workout/ Authorization: Token 40347bbdeb3bcfe80b3dd278e6b864128a087c70
+  197  http GET https://wger.de/api/v2/workout/ Authorization: 40347bbdeb3bcfe80b3dd278e6b864128a087c70
+  198  http GET https://wger.de/api/v2/workout/ Authorization== 40347bbdeb3bcfe80b3dd278e6b864128a087c70
+  199  http GET https://wger.de/api/v2/workout/ Authorization: Token 40347bbdeb3bcfe80b3dd278e6b864128a087c70
+  200  http GET https://wger.de/api/v2/workout/ Authorization:Token 40347bbdeb3bcfe80b3dd278e6b864128a087c70
+  201  http GET https://wger.de/api/v2/workout/ Authorization:Token40347bbdeb3bcfe80b3dd278e6b864128a087c70
+  202  http GET https://wger.de/api/v2/workout/ Authorization:Token 40347bbdeb3bcfe80b3dd278e6b864128a087c70
+  203  cd repos
+  204  git clone git@github.com:tangm28/ajax-project.git
+  205  cd ajax-project/
+  206  npm ci
+  207  git branch issue-1-set-1-rep
+  208  git switch issue-1-set-1-rep 
+  209  git status
+  210  git add css/
+  211  git add index.html 
+  212  git commit -m 'Completed html skeleton'
+  213  git status
+  214  git add css/
+  215  git add index.html 
+  216  git commit -m 'Updated css so start page resembles wireframe.'
+  217  git status
+  218  git add css/
+  219  git add index.html 
+  220  git commit -m 'Created 1 rep max calculator modal.'
+  221  git status
+  222  git add css/
+  223  git add index.html 
+  224  git commit -m 'Completed 1 rep max result modal.'
+  225  git status
+  226  git add index.html 
+  227  git add js/
+  228  git commit -m 'User can open and close calc modal.'
+  229  git status
+  230  git add js/
+  231  git commit -m 'User can open and close calc modal.'
+  232  git status
+  233  git add css/
+  234  git add index.html 
+  235  git add js/
+  236  git commt -m 'Calculator is functional. User can exit out of calc modal and calc result modal.'
+  237  git commit -m 'Calculator is functional. User can exit out of calc modal and calc result modal.'
+  238  git status
+  239  git add index.html 
+  240  git commit -m 'Added comment sectioning to html.'
+  241  cd repos
+  242  cd ajax-project/
+  243  git status
+  244  add css/
+  245  git add css/
+  246  git add index.html 
+  247  git add js/
+  248  git commit -m 'Submit event will save maxes to local storage and user need to input positive number otherwise an alert will come up.'
+  249  git status
+  250  git add js/
+  251  git status
+  252  git commit -m 'Forms are properly reset after submit event.'
+  253  git status
+  254  git push origin issue-1-set-1-rep 
+  255  git status
+  256  git restore index.html
+  257  git restore js/
+  258  git status
+  259  git switch master
+  260  git pull
+  261  git status
+  262  git branch issue-2-create-main-page
+  263  git switch issue-2-create-main-page 
+  264  git status
+  265  git add css/
+  266  git add index.html 
+  267  git commit -m 'Building main page.'
+  268  cd repos
+  269  cd ajax-project/
+  270  git status
+  271  git add css/
+  272  git add index.html 
+  273  git commit -m 'Created card for Current Training Maxes.'
+  274  git status
+  275  git add css/
+  276  git add index.html 
+  277  git commit -m 'Fixed spacing and added edit icon.'
+  278  git status
+  279  git add css/
+  280  git add index.html 
+  281  git add js/
+  282  git commit -m 'User can go to maxes edit page.'
+  283  git status
+  284  git add css/
+  285  git add index.html 
+  286  git add js/
+  287  git commit -m 'User can go between main page and current maxes.'
+  288  git status
+  289  git add index.html 
+  290  git add js/
+  291  git status
+  292  git commit -m 'Maxes card updates on load and when user saves updated maxes.'
+  293  git status
+  294  git add js/
+  295  git commit -m 'Update current training maxes text content to Update instead of Save.'
+  296  cd repos
+  297  cd ajax-project/
+  298  git status
+  299  git add css/
+  300  git add index.html 
+  301  git commit -m 'Added Explore Exercises... and Measurement card to main page.'
+  302  git status
+  303  add css/
+  304  git add css/
+  305  git commit -m 'Added Explore Exercises... and Measurement card to main page.'
+  306  git status
+  307  git push origin issue-2-create-main-page 
+  308  git switch master
+  309  git pull
+  310  git branch issue-5-explore-exercise
+  311  git status
+  312  git add js/
+  313  git commit -m 'Testing API'
+  314  git add js/
+  315  git commit -m 'Testing API'
+  316  cd repos
+  317  cd ajax-project/
+  318  git branch issue-5-explore-exercise 
+  319  git switch issue-5-explore-exercise 
+  320  git status
+  321  git switch master
+  322  git switch issue-5-explore-exercise 
+  323  git status
+  324  git add css/
+  325  git add index.html 
+  326  git add js/
+  327  git commit -m 'Created Exercises Page.'
+  328  git add js/
+  329  git commit -m 'Created Exercises Page.'
+  330  git status
+  331  git add css/
+  332  git add index.html 
+  333  git add js/
+  334  git commit -m 'User can see a selection of muscle to choose from in the dropdown.'
+  335  git status
+  336  git add index.html 
+  337  git add js/
+  338  git commit -m 'Submit event will bring user to the selected muscle excercise page.'
+  339  git add js/
+  340  git commit -m 'Submit event will bring user to the selected muscle excercise page.'
+  341  git status
+  342  git add css/
+  343  git add index.html 
+  344  git add js/
+  345  git commit -m 'Start render of exercises.'
+  346  git status
+  347  cd repos
+  348  cd ajax-project/
+  349  git status
+  350  git add js/
+  351  git commit -m 'Created a local render of muscle selection.'
+  352  git add js/
+  353  git commit -m 'Created a local render of muscle selection.'
+  354  git status
+  355  git add js
+  356  git commit -m 'Successfuly retrieved 420 items using ajax.'
+  357  git add js
+  358  git commit -m 'Successfuly retrieved 420 items using ajax.'
+  359  git add js
+  360  git commit -m 'Successfuly retrieved 420 items using ajax.'
+  361  git status
+  362  git add css/
+  363  git add index.html 
+  364  git add js/
+  365  git commit -m 'Fixed button to position absolute to parent div instead of using flexbox.'
+  366  git add js/
+  367  git commit -m 'Fixed button to position absolute to parent div instead of using flexbox.'
+  368  cd repos
+  369  git clone git@github.com:llaveirge/week-planner.git
+  370  cd week-planner/
+  371  git status
+  372  npm ci
+  373  git pull
+  374  cd repos
+  375  cd week-planner/
+  376  git status
+  377  git add index.html 
+  378  git add styles.css 
+  379  git status
+  380  git commit -m 'Create Add Entry modal.'
+  381  git status
+  382  git add .
+  383  git status
+  384  git commit -m 'Create Add Entry modal.'H
+  385  git push origin master
+  386  git status
+  387  git pull
+  388  git add .
+  389  git commit -m 'Made data model for entries.'
+  390  git push origin master
+  391  git pull
+  392  git status
+  393  git pull
+  394  git status
+  395  git pull
+  396  git add .
+  397  git push origin
+  398  git commit -m 'Sorting entries'
+  399  git push origin
+  400  cd repos
+  401  cd rc1121-code-solutions/
+  402  git branch es6-arrow-functions
+  403  git switch es6-arrow-functions 
+  404  git status
+  405  git add es6-arrow-functions/
+  406  git status
+  407  git add es6-arrow-functions/
+  408  git commit -m 'Completed arrow functions exercise.'
+  409  git commit -m 'Completed arrow functions exercise.' --no-verify
+  410  git push origin es6-arrow-functions 
+  411  git switch master
+  412  npm ci
+  413  git pull
+  414  git status
+  415  git branch command-line-basics
+  416  git switch command-line-basics 
+  417  cd command-line-basics/
+  418  git status
+  419  pwd
+  420  man
+  421  man man
+  422  man cat
+  423  cat laziness.txt 
+  424  cat impatience.txt 
+  425  cat hubris.txt 
+  426  cat laziness.txt impatience.txt hubris.txt > three.virtues.txt
+  427  man ls
+  428  ls -a
+  429  ls -F
+  430  ls -a lfz-staff/
+  431  ls -F lfz-staff/
+  432  ls -aF lfz-staff/ > lfz-staff/contents.txt
+  433  ls
+  434  cat lfz-staff/contents.txt 
+  435  man pwd
+  436  pwd > i-was-here.txt
+  437  ls
+  438  cat i-was-here.txt 
+  439  man echo
+  440  ls
+  441  cat hello.txt
+  442  echo 'Hello, World!'
+  443  echo 'Hello, World!' > hello.txt
+  444  cat hello.txt 
+  445  man touch
+  446  touch tag-youre-it.txt
+  447  touch snoot/boop.txt
+  448  ls snoot/
+  449  man mkdir
+  450  mkdir parent
+  451  ls parent/
+  452  mkdir -p parent/child/grandchild
+  453  ls p
+  454  ls parent/
+  455  touch .gitkeep parent/child/grandchild/
+  456  ls -a .gitkeep
+  457  ls parent/
+  458  ls parent/child/
+  459  ls parent/child/grandchild/
+  460  touch parent/child/grandchild/.gitkeep
+  461  ls -a .gitkeep 
+  462  ls .gitkeep
+  463  man ls
+  464  ls -a .gitkeep parent/
+  465  ls -a .gitkeep parent/child/
+  466  ls -a .gitkeep parent/child/grandchild/
+  467  man mv
+  468  mv pokiemans pokemon
+  469  ls pokemon
+  470  rm lol.txt
+  471  ls lol.txt
+  472  rm -r kill-me/
+  473  ls kil-me/
+  474  cp and-then.txt no-and-then.txt
+  475  cat and-then.txt no-and-then.txt 
+  476  history
+  477  history > command-history.txt

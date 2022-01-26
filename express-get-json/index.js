@@ -21,17 +21,12 @@ const grades = {
   }
 };
 
-app.use((req, res, next) => {
+app.get('/api/grades', (req, res) => {
   const data = [];
   for (const key in grades) {
     data.push(grades[key]);
   }
   res.json(data);
-  next();
-});
-
-app.get('/api/grades', (req, res) => {
-  res.send();
 });
 
 app.listen(3000);

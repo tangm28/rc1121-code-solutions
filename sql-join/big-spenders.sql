@@ -4,4 +4,4 @@ select "firstName",
     from "customers"
     join "payments" using ("customerId")
     order by "amount" desc
-  limit 10
+   limit 10

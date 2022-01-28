@@ -39,10 +39,10 @@ app.post('/api/grades/', (req, res) => {
     course: req.body.course,
     score: req.body.score
   };
-  res.send(newObj);
+  grades[nextID] = newObj;
   nextID++;
+  res.status(201).json(newObj);
 });
 
 app.listen(3000, () => {
-  console.log('Listening on port 3000!');
 });

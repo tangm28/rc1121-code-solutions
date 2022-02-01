@@ -48,18 +48,13 @@ app.post('/api/grades/', (req, res, next) => {
     return;
   }
 
-  const newGrade = {
-    name: req.body.name,
-    course: req.body.course,
-    score: req.body.score
-  };
   // sql query - $# takes in parameters
   const sql = `
     insert into "grades" ("name", "course", "score")
     values ($1, $2, $3)
     returning *
   `;
-  const params = [newGrade.name, newGrade.course, newGrade.score];
+  const params = [req.body.name, req.body.course, req.body.score];
 
   db.query(sql, params)
     .then(result => {
@@ -153,7 +148,7 @@ app.delete('/api/grades/:gradeId', (req, res, next) => {
       `;
       db.query(newSql, params)
         .then(result => {
-          res.status(204).json({ success: `"gradeId" ${gradeId} has been deleted` });
+          res.sendStatus(204);
         })
         .catch(err => {
           console.error(err);

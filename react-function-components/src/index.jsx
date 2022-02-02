@@ -6,6 +6,6 @@ function CustomButton() {
 }
 
 ReactDOM.render(
-  CustomButton(),
+  <CustomButton />,
   document.getElementById('root')
 );

@@ -1,0 +1,33 @@
+.btn {
+  border: 5px solid black;
+  padding: 2rem 3rem;
+  font-size: 2rem;
+  box-shadow: 5px 10px black;
+}
+
+.btn-purple {
+  background-color: purple;
+  color: white;
+}
+
+.btn-violet {
+  background-color: blueviolet;
+  color: white;
+}
+
+.btn-red {
+  background-color: orangered;
+  color: white;
+}
+
+.btn-orange {
+  background-color: orange;
+}
+
+.btn-yellow {
+  background-color: yellow;
+}
+
+.btn-white {
+  background-color: white;
+}

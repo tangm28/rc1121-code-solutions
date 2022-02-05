@@ -6,7 +6,8 @@ class ValidatedInput extends React.Component {
     this.state = {
       password: '',
       correctLogin: false,
-      pwVerbiage: 'A password is required.'
+      pwVerbiage: '',
+      icon: ''
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -20,12 +21,12 @@ class ValidatedInput extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     if (this.state.password.length >= 8) {
-      this.setState({ correctLogin: true, pwVerbiage: '' });
+      this.setState({ correctLogin: true, pwVerbiage: '', icon: 'fas fa-check' });
     } else {
       if (this.state.password.length === 0) {
-        this.setState({ pwVerbiage: 'A password is required.' });
+        this.setState({ pwVerbiage: 'A password is required.', icon: 'fas fa-times' });
       } else {
-        this.setState({ pwVerbiage: 'Your password is too short.' });
+        this.setState({ pwVerbiage: 'Your password is too short.', icon: 'fas fa-times' });
       }
       this.setState({ correctLogin: false });
     }
@@ -42,7 +43,7 @@ class ValidatedInput extends React.Component {
               id="login-password"
               value={this.state.password}
               onChange={this.handleChange} />
-            <i className={this.state.correctLogin ? 'fas fa-check' : 'fas fa-times'}></i>
+            <i className={this.state.icon}></i>
           </div>
           <p className='password-verbiage'>{this.state.pwVerbiage}</p>
         </form>

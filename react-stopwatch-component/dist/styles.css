@@ -1,0 +1,23 @@
+.stopwatch {
+  background-color: gray;
+  color: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  margin: auto;
+}
+
+.container {
+  margin: auto;
+  max-width: 100%;
+}
+
+.play-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

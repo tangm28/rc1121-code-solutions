@@ -34,6 +34,7 @@ const accounttReducer = (previousValue, currentValue) => {
   }
   return balance;
 };
+
 // The second arguement sets previousValue to 0
 const balance = account.reduce(accounttReducer, 0);
 console.log('The value of balance is: ', balance);
@@ -42,7 +43,7 @@ const compositeReducer = (previousValue, currentValue) => Object.assign(previous
 const composite = traits.reduce(compositeReducer);
 console.log('The value of composite is: ', composite);
 
-// how reduce works
+// how reduce works, follow this as an example
 // const array = [15, 16, 17, 18, 19];
 
 // function reducer(previous, current, index, array) {

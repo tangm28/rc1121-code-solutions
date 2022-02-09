@@ -9,9 +9,9 @@ class Carousel extends React.Component {
 
   handleClick(event) {
     clearInterval(this.carouselID);
-    if (event.target.className === 'fas fa-chevron-right') {
+    if (event.target.className === 'fas fa-chevron-right font-large') {
       this.carouselRight();
-    } else if (event.target.className === 'fas fa-chevron-left') {
+    } else if (event.target.className === 'fas fa-chevron-left font-large') {
       this.carouselLeft();
     }
     this.carouselID = setInterval(
@@ -55,18 +55,18 @@ class Carousel extends React.Component {
   render() {
     const carouselItems = this.props.carouselItems;
     const dots = carouselItems.map(items =>
-      <i className={carouselItems.indexOf(items) === this.state.carouselIndex ? 'fas fa-circle' : 'far fa-circle'}
+      <i className={carouselItems.indexOf(items) === this.state.carouselIndex ? 'margin-5 fas fa-circle' : 'margin-5 far fa-circle'}
         key={carouselItems.indexOf(items)}></i>);
     return (
       <div className='carousel'>
-        <i className="fas fa-chevron-left" onClick={this.handleClick}></i>
+        <i className="fas fa-chevron-left font-large" onClick={this.handleClick}></i>
         <div>
           <img src={carouselItems[this.state.carouselIndex].imgUrl} alt="" />
           <div className='dotTracker'>
             {dots}
           </div>
         </div>
-        <i className="fas fa-chevron-right" onClick={this.handleClick}></i>
+        <i className="fas fa-chevron-right font-large" onClick={this.handleClick}></i>
       </div>
     );
   }

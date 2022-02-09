@@ -1,0 +1,36 @@
+.carousel {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  justify-content: center;
+  width: 400px;
+}
+
+.dotTracker {
+  display: flex;
+  margin: 15px 30px;
+  font-size: 15px;
+  justify-content: center;
+}
+
+img {
+  width: 200px;
+  padding: 40px 40px 0 40px;
+}
+
+/* .fa-chevron-left,
+.fa-chevron-right {
+  font-size: 40px;
+}
+
+.fa-circle {
+  margin: 5px;
+} */
+
+.font-large {
+  font-size: 40px;
+}
+
+.margin-5 {
+  margin: 5px;
+}

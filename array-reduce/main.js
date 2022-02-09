@@ -26,16 +26,7 @@ const product = numbers.reduce(productReducer);
 console.log('The value of product is: ', product);
 
 const accounttReducer = (previousValue, currentValue) => {
-  let balance = 0;
-  if (isNaN(Number(previousValue))) {
-    if (previousValue.type === 'withdrawal') {
-      balance += (previousValue.amount * -1);
-    } else {
-      balance += previousValue.amount;
-    }
-  } else {
-    balance = previousValue;
-  }
+  let balance = previousValue;
   if (currentValue.type === 'withdrawal') {
     balance += (currentValue.amount * -1);
   } else {
@@ -43,14 +34,16 @@ const accounttReducer = (previousValue, currentValue) => {
   }
   return balance;
 };
-const balance = account.reduce(accounttReducer);
+
+// The second arguement sets previousValue to 0
+const balance = account.reduce(accounttReducer, 0);
 console.log('The value of balance is: ', balance);
 
 const compositeReducer = (previousValue, currentValue) => Object.assign(previousValue, currentValue);
 const composite = traits.reduce(compositeReducer);
 console.log('The value of composite is: ', composite);
 
-// how reduce works
+// how reduce works, follow this as an example
 // const array = [15, 16, 17, 18, 19];
 
 // function reducer(previous, current, index, array) {

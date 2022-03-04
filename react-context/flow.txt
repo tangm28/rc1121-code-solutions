@@ -1,0 +1,43 @@
+1. Start in app.jsx
+2. On mount we check if a token is available in localStorage
+3. No token means that there is no valid log in
+4. Context gets set up with AppContext.Provider value={contextValue}
+   4a. jsx with an import AppContext and a *.contextType = AppContext can use
+       the variables that was set up with contextValue
+5. Page is rendered
+6. Page will load # first. Since there is no valid log in (user), page gets
+   redirected to Sign In page
+
+7. Currently no account so we will Sign up
+8. Page will use # to render the page
+9. # is sign-up so the register test is Sign in instead, the anchor links to
+   #sign-in, and submit button renders as Register
+10. On form submit, the client sends a request to the server to post Username
+    and hashedPassword to the users table in the pgweb database
+    10a. If the Username is already in the database, it is not a unique
+         Username so the server will give the client an error
+    10b. If the submitted Username is unique the server will hash the password
+         and send the data to the database
+         10bi. The server will send the userId, username, and createdAt back to
+               the client
+11. After registering is successful, the hash changes to sign in
+12. Username and password is inputted
+13. On submit, the client sends a post request to the server
+    13a. If the server finds the inputted Username in the database, it will
+         check the password against the hashedPassword in the database
+         13ai. If the password matches, the server will set up a token and send
+               it back to client with the userId and username
+         13aii. An incorrect password will send an error 401 to the client
+    13b. An invalid Username will send an error 401 to the client
+14. Afer the result of the request is concluded, the handleSignIn function is
+    called. This will store the token in localStorage and update the state
+    User in the state is no longer null
+15. Now that we have User is not null, the homepage is renders
+16. On page refresh, app.jsx componentDidMount fires
+    16a. The token is accessed from the localStorage and is decoded and the User
+         in state is set with the information from the token. This keeps the
+         user logged in and on the homepage
+17. When the user click the sign out in the navbar, the onClick calls handleSignOut.
+    17a. handleSignOut can be accessed because of context.
+    17b. handleSignOut removes the token. When there is no token available in localStorage,
+         User in state is set to null

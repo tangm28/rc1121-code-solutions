@@ -27,7 +27,7 @@ export default class App extends React.Component {
       });
     });
     const token = window.localStorage.getItem('react-context-jwt');
-    const user = false;
+    const user = token ? decodeToken(token) : null;
     this.setState({ user, isAuthorizing: false });
   }
 
@@ -43,7 +43,6 @@ export default class App extends React.Component {
   }
 
   renderPage() {
-    console.log(this.state);
     const { path } = this.state.route;
     if (path === '') {
       return <Home />;
@@ -55,7 +54,6 @@ export default class App extends React.Component {
   }
 
   render() {
-
     if (this.state.isAuthorizing) return null;
     const { user, route } = this.state;
     const { handleSignIn, handleSignOut } = this;
@@ -65,7 +63,7 @@ export default class App extends React.Component {
         <>
           <Navbar />
           <PageContainer>
-            { this.renderPage() }
+            {this.renderPage()}
           </PageContainer>
         </>
       </AppContext.Provider>

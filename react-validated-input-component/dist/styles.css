@@ -1,0 +1,19 @@
+label {
+  display: block;
+}
+
+.password-verbiage {
+  color: red;
+  font-size: small;
+  margin: 0;
+}
+
+.fa-times {
+  color: red;
+  margin-left: 10px;
+}
+
+.fa-check {
+  color: green;
+  margin-left: 10px;
+}
